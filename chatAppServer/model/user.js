@@ -10,6 +10,7 @@ var UserProfileSchema = mongoose.Schema({
     password: {type: String, required: true},
     email: String,
     nickname: String,
+    socket_id: {type: String}
 });
 
 UserProfileSchema.plugin(autoIncrement.plugin, 'UserProfile');
